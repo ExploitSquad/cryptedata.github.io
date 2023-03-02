@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/css?family=Poppins:300,400,500.600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@200&family=Merriweather+Sans:wght@500&family=Roboto:wght@500&display=swap');
 
 *
 {
@@ -48,6 +48,14 @@ header ul li a{
     color: #fff;
     border-radius: 20px;
 }
+.inginOptions a{
+    text-decoration: none;
+    padding: 6px 20px;
+    font-family: Anton;
+    color: #fff;
+    border-radius: 20px;
+}
+
 header ul li a:hover,
 header ul li a:hover.active
 {
@@ -66,4 +74,61 @@ header ul li a:hover.active
     background: #fff;
     color:#0b3504;
     font-size: 1.5em;
+}
+.container
+{
+    text-align: center;
+    margin-top: 360px;
+}
+
+.btn
+{
+    border: 1px solid #fff;
+    background: none;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 500px;
+    transition: 0.8s;
+}
+.btn1
+{
+    color: #292c28;
+
+}
+.btn1:hover
+{
+    color: #fff;
+}
+
+.btn1::before
+{
+    content:"";
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 100;
+    background: #fff;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before
+{
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before
+{
+    height: 180%;
+}
+
+.welcome_sectin h1
+{
+    color: #fff;
+    margin: 200px;
+    font-size: 20px;
 }
